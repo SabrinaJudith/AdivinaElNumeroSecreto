@@ -1,4 +1,4 @@
-//Variables
+
 let numeroMaximoPosible = 100;
 let numeroSecreto = Math.floor(Math.random()*numeroMaximoPosible)+1;
 let numeroUsuario = 0;
@@ -12,7 +12,7 @@ while (numeroUsuario != numeroSecreto) {
 
     console.log(typeof(numeroUsuario));
     if (numeroUsuario == numeroSecreto) {
-        //Acertamos, fue verdadera la condición
+        
         alert(`Acertaste, el número es: ${numeroUsuario}. Lo hiciste en ${intentos} ${intentos == 1 ? 'vez' : 'veces' }`);
     } else {
         if (numeroUsuario > numeroSecreto) {
@@ -20,9 +20,7 @@ while (numeroUsuario != numeroSecreto) {
         } else {
             alert('El número secreto es mayor');
         }
-        //Incrementamos el contador cuando no acierta
-        //intentos = intentos + 1;
-        //intentos += 1;
+        
         intentos++;
 
         //palabraVeces = 'veces';
@@ -30,7 +28,6 @@ while (numeroUsuario != numeroSecreto) {
             alert(`Llegaste al número máximo de ${maximosIntentos} intentos`);
             break;
         }
-        //La condición no se cumplió
-        //alert('Lo siento, no acertaste el número');
+     
     }
 }
